@@ -65,6 +65,10 @@ public class Jogo {
 	@JsonIgnoreProperties("jogo") // freia o loop
 	private Categoria categoria; // cria atributo categoria através da categoria
 	
+	@ManyToOne
+	@JsonIgnoreProperties("jogo") // freia o loop
+	private Usuario usuario; // cria atributo categoria através da categoria
+	
 	// METODOS PARA PUXAR NO POSTMAN
 
 	public Long getId() {
